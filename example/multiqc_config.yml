@@ -1,0 +1,23 @@
+custom_data:
+    segmentation_stats:
+        file_format: 'csv'
+        id: 'segmentation_stats'
+        section_name: 'QC statistics from segmentation'
+        plot_type: 'table'
+        pconfig:
+            id: 'segmentation_stats'
+            namespace: 'Segmentation stats'
+        headers:
+            Mean_Signal:
+                description: 'Averaged signal per cell (across all channels)'
+                format: '{:,.2f}'
+            Mean_Area:
+                description: 'Averaged cell area (in pixels)'
+                format: '{:,.2f}'
+            CellCount:
+                description: 'Total number of segmented cells'
+                format: '{:,.0f}'
+
+sp:
+    segmentation_stats:
+        fn: '*csv'
